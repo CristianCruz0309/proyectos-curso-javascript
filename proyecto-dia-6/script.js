@@ -1,4 +1,26 @@
-let array = [1.7, 3, 2.5, 4.8, 3.6];
+let array = [];
+
+function agregarNota() {
+    let input = document.getElementById("inputNota");
+    let nota = parseFloat(input.value);
+
+    if (array.length >= 5) {
+        alert("Solo se permiten máximo 5 notas");
+        return;
+    }
+
+    if (isNaN(nota) || nota < 0 || nota > 5) {
+        alert("Ingresa una nota válida entre 0 y 5");
+        return;
+    }
+
+    // 🔴 limitar a 1 decimal
+    nota = Number(nota.toFixed(1));
+
+    array.push(nota);
+    input.value = "";
+    listarNotas();
+}
 
 function listarNotas() {
     let lista = document.getElementById("listaNotas");
@@ -53,4 +75,5 @@ function hayAplazo() {
         i++;
     } while (i < 5);
     document.getElementById("aplazo").textContent = aplazo;
+
 }
