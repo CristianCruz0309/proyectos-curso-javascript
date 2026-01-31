@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf5);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-top: 10px;
+}
+
+h3 {
+    color: #1f2937;
+}
+
+h4 {
+    color: #374151;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-weight: 600;
+    color: #2563eb;
+    padding: 6px 0;
+}
+
+button {
+    height: 36px;
+    width: 180px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    border-bottom: 4px solid #2563eb;
+}
+
+.logo img {
+    height: 200px;
+    width: auto;
+}
+
+.estudiante {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto 15px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.notas {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nota-mala {
+    color: #dc2626; /* rojo */
+    font-weight: bold;
+}
+
+.nota-buena {
+    color: #1e40af; /* verde */
+    font-weight: bold;
+}
+
+.notas ul {
+    margin: 0;
+}
+
+.notas li {
+    font-size: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 0;
+}
+
+.notas li:last-child {
+    border-bottom: none;
+}
+
+
+.info {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info h4 {
+    margin-bottom: 5px;
+}
+
+.info span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1e40af;
+}

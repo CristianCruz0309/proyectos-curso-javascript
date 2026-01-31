@@ -1,0 +1,154 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(
+        circle at top,
+        #1f2933 0%,
+        #0f172a 40%,
+        #020617 100%
+    );
+    color: #ff3a3a;
+    min-height: 100vh;
+}
+
+
+.contenedor {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ff4b4b; /* un rojo vibrante */
+    text-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.6),
+        0 0 10px rgba(255, 75, 75, 0.5); /* efecto de brillo suave */
+    animation: fadeUp 1s ease forwards;
+    margin-bottom: 20px;
+}
+
+
+
+input, select {
+    width: 65%;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 15px;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+
+button {
+    background: linear-gradient(135deg, #c52222, #a31616);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 30px rgba(197, 34, 34, 0.4);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background: #ffffff;
+    border-radius: 18px;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 420px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+li img {
+    display: block;
+    margin: 15px auto 0;
+    max-width: 220px;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.635);
+    transition: transform 0.4s ease;
+}
+
+li p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-style: italic;
+    color: #6a2121;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    transform: translateY(-6px);
+    transition:
+        opacity 0.4s ease,
+        max-height 0.4s ease,
+        transform 0.4s ease;
+}
+
+li:hover img {
+    transform: scale(1.05);
+}
+
+li:hover p, li:hover img {
+    display: block;
+    opacity: 1;
+}
+
+li:hover p {
+    opacity: 1;
+    max-height: 200px;
+    transform: translateY(0);
+}
+
+li:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 5px 30px rgba(255, 0, 0, 0.695);
+}
+
+.bloque {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.bloque-busqueda {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

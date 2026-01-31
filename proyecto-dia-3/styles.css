@@ -1,0 +1,67 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f4f1e6;
+}
+
+.contenedor {
+    background-color: white;
+    width: 420px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: darkkhaki;
+}
+
+p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    background-color: darkkhaki;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: olive;
+    cursor: pointer;
+}
+
+input:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+#cuentaRegresiva {
+    border: 2px solid red;
+    color: red;
+    padding: 4px 10px;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

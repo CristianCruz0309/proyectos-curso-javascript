@@ -1,0 +1,15 @@
+{
+    "data": 
+    [ 
+        { "nombre": "FALLOUT", "sinopsis": "Narra la historia de la Easy Company, un batallón estadounidense del regimiento 506 de paracaidistas, que luchó en Europa durante la II Guerra Mundial.",
+        "imagen": "Portadas/FALLOUT.jpg"},
+        { "nombre": "HALO", "sinopsis": "Halo narra un conflicto épico del siglo XXVI entre la humanidad y una amenaza alienígena conocida como el Covenant. Halo entrelazará historias personales profundas con acción, aventura y una visión del futuro ricamente imaginada.",
+        "imagen": "Portadas/HALO.jpg"},
+        { "nombre": "THE WALKING DEAD", "sinopsis": "Basado en la historieta escrita por Robert Kirkman, este drama crudo describe las vidas de un grupo de sobrevivientes que está siempre en movimiento en busca de un hogar seguro durante las semanas y meses de un apocalipsis zombi.",
+        "imagen": "Portadas/Walking_Dead.jpg"},
+        { "nombre": "STRANGER THINGS", "sinopsis": "Cuando un niño desaparece, sus amigos, la familia y la policía se ven envueltos en una serie de eventos misteriosos al tratar de encontrarlo. Mientras tanto, una niña con habilidades especiales aparece en la ciudad.",
+        "imagen": "Portadas/Stranger_Things.jpg"},
+        { "nombre": "THE SIMPSONS", "sinopsis": "La comedia de dibujos animados se centra en una familia que vive en la ciudad de Springfield. La cabeza de la familia Simpson es Homero, quien no es un hombre de familia típico, obrero de una planta nuclear, él hace lo mejor para poder liderar a su familia, pero frecuentemente se da cuenta que son ellos los que lo mandan.",
+        "imagen": "Portadas/SIMPSON.jpg"}
+    ]
+}

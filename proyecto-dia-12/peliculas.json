@@ -1,0 +1,21 @@
+{
+    "data": 
+    [ 
+        { "nombre": "BACK TO THE FUTURE", 
+        "sinopsis": "El adolescente Marty McFly es amigo de Doc, un científico al que todos toman por loco. Cuando Doc crea una máquina para viajar en el tiempo, un error fortuito hace que Marty llegue a 1955, año en el que sus futuros padres aún no se habían conocido.",
+        "imagen": "Portadas/Back_to_the_Future.jpg"
+        },
+        { "nombre": "SHREK", 
+        "sinopsis": "Shrek es un ogro antisocial y huraño que ama la soledad y tranquilidad de su pantano, donde disfruta ahuyentando a turbas e intrusos. Un día, su vida normal se interrumpe cuando salva sin querer a un burro parlante, Donkey («Burro» en Hispanoamérica; «Asno» en España), de unos soldados, provocando que este comience a seguirlo y a quedarse con él a la fuerza.",
+        "imagen": "Portadas/Shrek.webp"},
+        { "nombre": "AVATAR", 
+        "sinopsis": "La película se sitúa en el año 2154, donde conocemos a un joven llamado Jake Sully, un marine veterano de guerra y herido en combate que ha quedado parapléjico, es seleccionado para participar en el programa Avatar ocupando el puesto de científico que ocupaba su hermano gemelo recién fallecido e incinerado delante sus propios ojos.",
+        "imagen": "Portadas/Avatar.webp"},
+        { "nombre": "GODZILLA", 
+        "sinopsis": "Ford Brody es un experto de los marines que tiene que ir a Japón para rescatar a su padre. Pronto, los dos hombres se encuentran atrapados en el caos cuando Godzilla, el Rey de los Monstruos, aparece después de pasar décadas debajo del agua.",
+        "imagen": "Portadas/Godzilla.jpg"},
+        { "nombre": "WEATHERING WITH YOU", 
+        "sinopsis": "En junio de 2021, el estudiante de primer año de secundaria Hodaka Morishima escapa de Kōzushima para escapar de su problemática vida familiar a Tokio. Cuando su ferry a la ciudad es golpeado por una tormenta, Keisuke Suga lo salva y le da a Hodaka su tarjeta de presentación.",
+        "imagen": "Portadas/Weathering_With_You.jpg"}
+    ]
+}

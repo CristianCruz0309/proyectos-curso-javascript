@@ -1,0 +1,9 @@
+{
+    "banco": "BANCOLOMBIA S.A.",
+    "sucursal": "Cali , CL1",    
+    "titular": "Cristian Cruz",
+    "nro_cuenta": "1752461/08",    
+    "saldo": [ { "moneda": "USD", "monto": 725.09 }, { "moneda": "EUR", "monto": 195.67}, { "moneda": "COP", "monto": 320000 } ],
+    "cbu": "1562244781396451",
+    "abierto": "15/01/2026"
+}

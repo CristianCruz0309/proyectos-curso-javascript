@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Responde Rápido!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="comenzarCuentaRegresiva()">
+
+    <div class="contenedor">
+        <h2>
+            Responde a las preguntas lo más rápido que puedas!
+            <span id="cuentaRegresiva">30</span>
+        </h2>
+
+        <p>1. ¿Cuál es la capital de Francia?</p>
+        <input type="text" id="respuesta1">
+
+        <p>2. (7 × 5) + 15</p>
+        <input type="text" id="respuesta2">
+
+        <p>3. Símbolo químico del agua?</p>
+        <input type="text" id="respuesta3">
+
+        <p>4. Año del descubrimiento de América?</p>
+        <input type="text" id="respuesta4">
+
+        <p>5. En qué año se creó el fútbol?</p>
+        <input type="text" id="respuesta5">
+
+        <br><br>
+
+        <button onclick="finalizado()">Terminé</button>
+        <br><br>
+        <button onclick="volverIntentar()">Volver a intentar</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <audio id="audioFinal">
+        <source src="gameover.mp3" type="audio/mpeg">
+    </audio>
+
+<script>
+let tiempo = 30;
+let intervalo;
+let tiempoLimite;
+
+function comenzarCuentaRegresiva() {
+    intervalo = setInterval(ticTac, 1000);
+    tiempoLimite = setTimeout(tiempoCumplido, 30000);
+}
+
+function ticTac() {
+    if (tiempo > 0) {
+        tiempo--;
+        document.getElementById("cuentaRegresiva").textContent = tiempo;
+    }
+
+    if (tiempo <= 10) {
+        document.getElementById("cuentaRegresiva").style.color = "darkred";
+    }
+
+    if (tiempo === 0) {
+        clearInterval(intervalo);
+    }
+}
+
+
+function tiempoCumplido() {
+    clearInterval(intervalo);
+    document.getElementById("cuentaRegresiva").textContent = 0
+    document.getElementById("audioFinal").play();
+
+    bloquearInputs();
+    alert("⏰ GAME OVER\nSe acabó el tiempo");
+}
+
+function finalizado() {
+    clearTimeout(tiempoLimite);
+    clearInterval(intervalo);
+
+    let puntaje = 0;
+    let resultado = "";
+
+    const r1 = document.getElementById("respuesta1").value.toLowerCase();
+    const r2 = document.getElementById("respuesta2").value;
+    const r3 = document.getElementById("respuesta3").value.toLowerCase();
+    const r4 = document.getElementById("respuesta4").value;
+    const r5 = document.getElementById("respuesta5").value;
+
+    if (r1 === "parís" || r1 === "paris") {
+        puntaje++; resultado += "1 ✅\n";
+    } else resultado += "1 ❌ (París)\n";
+
+    if (r2 === "50") {
+        puntaje++; resultado += "2 ✅\n";
+    } else resultado += "2 ❌ (50)\n";
+
+    if (r3 === "h2o" || r3 === "H2O") {
+        puntaje++; resultado += "3 ✅\n";
+    } else resultado += "3 ❌ (H2O)\n";
+
+    if (r4 === "1492") {
+        puntaje++; resultado += "4 ✅\n";
+    } else resultado += "4 ❌ (1492)\n";
+
+    if (r5 === "1863") {
+        puntaje++; resultado += "5 ✅\n";
+    } else resultado += "5 ❌ (1863)\n";
+
+    alert(
+        "📊 RESULTADOS\n\n" +
+        resultado +
+        "\n🎯 Puntaje final: " + puntaje + " / 5"
+    );
+
+    document.querySelectorAll("input").forEach(input => {
+        input.disabled = true;
+    });
+
+    document.querySelector("button").disabled = true;
+
+}
+
+function volverIntentar() {
+    location.reload();
+}
+
+document.getElementById("resultado").textContent = `Puntaje final: ${puntaje} / 5`;
+
+function bloquearInputs() {
+    document.querySelectorAll("input").forEach(input => {
+        input.disabled = true;
+    });
+}
+
+
+
+</script>
+</body>
+</html>

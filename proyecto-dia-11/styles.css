@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #7a0000, #9b0000);
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 420px;
+    max-width: 90%;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Logo */
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: 180px;
+    filter:
+        drop-shadow(2px 0 0 white)
+        drop-shadow(-2px 0 0 white)
+        drop-shadow(0 2px 0 white)
+        drop-shadow(0 -2px 0 white);
+}
+
+
+/* Encabezados */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+/* Texto general */
+p {
+    margin: 6px 0;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.35);
+    margin: 20px 0;
+}
+
+/* ===== SALDOS ===== */
+.saldo {
+    font-size: 1.15rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+/* Cada moneda como bloque */
+.saldo div {
+    margin: 14px 0;
+}
+
+/* Imagen + texto */
+.fila {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+/* Iconos */
+.saldo img {
+    height: 36px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* Datos finales */
+label {
+    font-weight: normal;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+    margin: 22px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
